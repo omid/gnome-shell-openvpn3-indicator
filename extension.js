@@ -63,15 +63,58 @@ class OpenVPN3Indicator extends PanelMenu.Button {
 
         this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
 
-        let manageItem = new PopupMenu.PopupMenuItem('Manage Profiles...');
-        manageItem.connect('activate', () => this._extension.openPreferences());
-        this.menu.addMenuItem(manageItem);
+        let actionRow = new PopupMenu.PopupBaseMenuItem({
+            reactive: false,
+            can_focus: false
+        });
 
-        this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
+        let box = new St.BoxLayout({
+            vertical: false,
+            x_expand: true,
+        });
 
-        let refreshItem = new PopupMenu.PopupMenuItem('Refresh');
-        refreshItem.connect('activate', () => this._updateMenu());
-        this.menu.addMenuItem(refreshItem);
+        // Add some spacing between the two buttons via an inline St.BoxLayout property if needed,
+        // or just apply a custom style class. Here we'll add a style class for CSS.
+        box.add_style_class_name('openvpn3-bottom-actions');
+
+        let manageBtnBox = new St.BoxLayout({ vertical: false, x_align: Clutter.ActorAlign.CENTER, y_align: Clutter.ActorAlign.CENTER, style_class: 'openvpn3-action-button-box' });
+        let manageIcon = new St.Icon({ icon_name: 'preferences-system-symbolic', style_class: 'popup-menu-icon' });
+        manageBtnBox.add_child(manageIcon);
+        manageBtnBox.add_child(new St.Label({ text: 'Manage', y_align: Clutter.ActorAlign.CENTER }));
+
+        let manageBtn = new St.Button({
+            style_class: 'button openvpn3-action-button',
+            child: manageBtnBox,
+            x_expand: true,
+            reactive: true,
+            can_focus: true
+        });
+        manageBtn.connect('clicked', () => {
+            this.menu.close();
+            this._extension.openPreferences();
+        });
+
+        let refreshBtnBox = new St.BoxLayout({ vertical: false, x_align: Clutter.ActorAlign.CENTER, y_align: Clutter.ActorAlign.CENTER, style_class: 'openvpn3-action-button-box' });
+        let refreshIcon = new St.Icon({ icon_name: 'view-refresh-symbolic', style_class: 'popup-menu-icon' });
+        refreshBtnBox.add_child(refreshIcon);
+        refreshBtnBox.add_child(new St.Label({ text: 'Refresh', y_align: Clutter.ActorAlign.CENTER }));
+
+        let refreshBtn = new St.Button({
+            style_class: 'button openvpn3-action-button',
+            child: refreshBtnBox,
+            x_expand: true,
+            reactive: true,
+            can_focus: true
+        });
+        refreshBtn.connect('clicked', () => {
+            this._updateMenu();
+        });
+
+        box.add_child(refreshBtn);
+        box.add_child(manageBtn);
+        
+        actionRow.add_child(box);
+        this.menu.addMenuItem(actionRow);
     }
     
     async _updateMenu() {
@@ -168,21 +211,23 @@ class OpenVPN3Indicator extends PanelMenu.Button {
                     y_align: Clutter.ActorAlign.CENTER
                 });
                 
-                let titleLabel = new St.Label({ text: config.name });
+                let titleLabel = new St.Label({
+                    text: config.name,
+                    style_class: 'openvpn3-profile-name'
+                });
                 labelBox.add_child(titleLabel);
-                
+
                 if (config.lastUsed && config.lastUsed !== '-') {
                     let subLabel = new St.Label({
-                        text: config.lastUsed,
+                        text: 'Last used: ' + config.lastUsed,
                         style_class: 'openvpn3-subtitle'
                     });
                     labelBox.add_child(subLabel);
-                }
-                
+                }                
                 item.add_child(labelBox);
 
                 let actionBtn = new St.Button({
-                    style_class: isConnected ? 'button circular destructive-action' : 'button circular',
+                    style_class: isConnected ? 'button circular destructive-action openvpn3-play-button' : 'button circular openvpn3-play-button',
                     child: new St.Icon({
                         icon_name: iconName,
                         style_class: 'popup-menu-icon'

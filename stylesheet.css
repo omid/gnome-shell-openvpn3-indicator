@@ -5,3 +5,16 @@
     font-size: 0.8em;
     opacity: 0.7;
 }
+.openvpn3-bottom-actions {
+    spacing: 12px;
+    margin: 6px;
+}
+.openvpn3-action-button {
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+.openvpn3-action-button-box {
+    spacing: 8px;
+}
+.openvpn3-play-button { padding: 4px; min-width: 24px; min-height: 24px; border-radius: 100%; }
+.openvpn3-profile-name { font-size: 1.1em; }

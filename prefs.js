@@ -177,7 +177,7 @@ export default class OpenVPN3Preferences extends ExtensionPreferences {
         dialog.connect('response', async (d, response) => {
             if (response === Gtk.ResponseType.OK) {
                 let name = entry.get_text().trim();
-                let importArgs = ['openvpn3', 'config-import', '--config', filePath];
+                let importArgs = ['openvpn3', 'config-import', '--persistent', '--config', filePath];
                 if (name) {
                     importArgs.push('--name', name);
                 }

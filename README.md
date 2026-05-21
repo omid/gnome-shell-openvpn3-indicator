@@ -1,6 +1,6 @@
 ![Screenshot](assets/screenshot.png)
 
-# ![Icon](assets/icon.png) OpenVPN3 Indicator
+# <img src="assets/icon.png" width="48" height="48" align="top"> OpenVPN3 Indicator
 
 A GNOME Shell extension to control OpenVPN 3 Linux client sessions and configurations directly from the top panel.
 

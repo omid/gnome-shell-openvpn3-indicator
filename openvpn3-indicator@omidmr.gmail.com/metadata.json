@@ -1,7 +1,8 @@
 {
   "name": "OpenVPN3 Indicator",
-  "description": "Control OpenVPN3 sessions and configs",
+  "description": "Control OpenVPN3 sessions and configs.\n\nTags: vpn, openvpn, openvpn 3, network, security, indicator, applet, tray, top bar, connection",
   "uuid": "openvpn3-indicator@omidmr.gmail.com",
+  "url": "https://github.com/omid/gnome-shell-openvpn3-indicator",
   "shell-version": [
     "45",
     "46",
@@ -12,5 +13,5 @@
   ],
   "gettext-domain": "openvpn3-indicator",
   "settings-schema": "org.gnome.shell.extensions.openvpn3-indicator",
-  "version": 2
+  "version": 3
 }

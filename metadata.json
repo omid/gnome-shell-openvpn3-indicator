@@ -1,7 +1,7 @@
 {
   "name": "OpenVPN3 Indicator",
   "description": "Control OpenVPN3 sessions and configs",
-  "uuid": "openvpn3-indicator@omid.local",
+  "uuid": "openvpn3-indicator@omidmr.gmail.com",
   "shell-version": [
     "45", "46", "47", "48", "49", "50"
   ],

@@ -1,4 +1,6 @@
-# OpenVPN3 Indicator
+![Screenshot](assets/screenshot.png)
+
+# ![Icon](assets/icon.png) OpenVPN3 Indicator
 
 A GNOME Shell extension to control OpenVPN 3 Linux client sessions and configurations directly from the top panel.
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.openvpn3-indicator" path="/org/gnome/shell/extensions/openvpn3-indicator/">
+    <key name="dummy" type="b">
+      <default>true</default>
+      <summary>Dummy</summary>
+      <description>Dummy</description>
+    </key>
+  </schema>
+</schemalist>

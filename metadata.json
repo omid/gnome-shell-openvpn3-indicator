@@ -1,0 +1,9 @@
+{
+  "name": "OpenVPN3 Indicator",
+  "description": "Control OpenVPN3 sessions and configs",
+  "uuid": "openvpn3-indicator@omid.local",
+  "shell-version": [
+    "45", "46", "47", "48", "49", "50"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.openvpn3-indicator"
+}

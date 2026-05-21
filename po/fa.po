@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: openvpn3-indicator\n"
+"Language: fa\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Manage"
+msgstr "مدیریت"
+
+msgid "Refresh"
+msgstr "تازه‌سازی"
+
+msgid "No profiles found"
+msgstr "هیچ نمایه‌ای یافت نشد"
+
+msgid "Last used: "
+msgstr "آخرین استفاده: "
+
+msgid "OpenVPN3 Profiles"
+msgstr "نمایه‌های OpenVPN3"
+
+msgid "Manage your imported VPN configurations."
+msgstr "پیکربندی‌های VPN وارد شده خود را مدیریت کنید."
+
+msgid "Import New Profile"
+msgstr "وارد کردن نمایه‌ جدید"
+
+msgid "No profiles imported yet."
+msgstr "هنوز هیچ نمایه‌ای وارد نشده است."
+
+msgid "Profile Name"
+msgstr "نام نمایه"
+
+msgid "Enter a name for the imported profile (optional):"
+msgstr "نامی برای نمایه‌ وارد شده وارد کنید (اختیاری):"
+
+msgid "Select OpenVPN Config"
+msgstr "انتخاب پیکربندی OpenVPN"
+
+msgid "Import"
+msgstr "وارد کردن"
+
+msgid "Cancel"
+msgstr "لغو"
+
+msgid "Rename Profile"
+msgstr "تغییر نام نمایه"
+
+msgid "Enter a new name for '%s':"
+msgstr "نام جدیدی برای '%s' وارد کنید:"
+
+msgid "OpenVPN Configs"
+msgstr "پیکربندی‌های OpenVPN"
+

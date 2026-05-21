@@ -1,8 +1,7 @@
 import Adw from 'gi://Adw';
 import Gtk from 'gi://Gtk';
 import Gio from 'gi://Gio';
-import GLib from 'gi://GLib';
-import { ExtensionPreferences } from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
+import { ExtensionPreferences, gettext as _ } from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 async function runCommand(argv) {
     try {
@@ -40,13 +39,13 @@ export default class OpenVPN3Preferences extends ExtensionPreferences {
 
         // Create a group for the profiles
         this._group = new Adw.PreferencesGroup({
-            title: 'OpenVPN3 Profiles',
-            description: 'Manage your imported VPN configurations.',
+            title: _('OpenVPN3 Profiles'),
+            description: _('Manage your imported VPN configurations.'),
         });
         page.add(this._group);
 
         // Import Button Row
-        const importRow = new Adw.ActionRow({ title: 'Import New Profile' });
+        const importRow = new Adw.ActionRow({ title: _('Import New Profile') });
         const importButton = new Gtk.Button({
             icon_name: 'document-open-symbolic',
             valign: Gtk.Align.CENTER,
@@ -94,7 +93,7 @@ export default class OpenVPN3Preferences extends ExtensionPreferences {
                         
                         let row = new Adw.ActionRow({
                             title: configName,
-                            subtitle: `Last used: ${lastUsed}`,
+                            subtitle: _('Last used: ') + lastUsed,
                         });
 
                         let editBtn = new Gtk.Button({
@@ -120,7 +119,7 @@ export default class OpenVPN3Preferences extends ExtensionPreferences {
             }
             
             if (count === 0) {
-                let emptyRow = new Adw.ActionRow({ title: 'No profiles imported yet.' });
+                let emptyRow = new Adw.ActionRow({ title: _('No profiles imported yet.') });
                 this._profilesGroup.add(emptyRow);
                 this._profileRows.push(emptyRow);
             }
@@ -132,15 +131,15 @@ export default class OpenVPN3Preferences extends ExtensionPreferences {
 
     _onImportClicked(window) {
         let filter = new Gtk.FileFilter();
-        filter.set_name("OpenVPN Configs");
+        filter.set_name(_("OpenVPN Configs"));
         filter.add_pattern("*.ovpn");
         filter.add_pattern("*.conf");
 
         let dialog = new Gtk.FileChooserNative({
-            title: "Select OpenVPN Config",
+            title: _("Select OpenVPN Config"),
             action: Gtk.FileChooserAction.OPEN,
-            accept_label: "Import",
-            cancel_label: "Cancel",
+            accept_label: _("Import"),
+            cancel_label: _("Cancel"),
             transient_for: window,
         });
         dialog.add_filter(filter);
@@ -164,8 +163,8 @@ export default class OpenVPN3Preferences extends ExtensionPreferences {
             transient_for: window,
             modal: true,
             buttons: Gtk.ButtonsType.OK_CANCEL,
-            text: "Profile Name",
-            secondary_text: "Enter a name for the imported profile (optional):",
+            text: _("Profile Name"),
+            secondary_text: _("Enter a name for the imported profile (optional):"),
         });
 
         dialog.set_default_response(Gtk.ResponseType.OK);
@@ -200,8 +199,9 @@ export default class OpenVPN3Preferences extends ExtensionPreferences {
             transient_for: this._window,
             modal: true,
             buttons: Gtk.ButtonsType.OK_CANCEL,
-            text: "Rename Profile",
-            secondary_text: `Enter a new name for '${configName}':`,
+            text: _("Rename Profile"),
+            // Translators: %s is the current profile name
+            secondary_text: _("Enter a new name for '%s':").replace('%s', configName),
         });
 
         dialog.set_default_response(Gtk.ResponseType.OK);

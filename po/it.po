@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: openvpn3-indicator\n"
+"Language: it\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Manage"
+msgstr "Gestisci"
+
+msgid "Refresh"
+msgstr "Aggiorna"
+
+msgid "No profiles found"
+msgstr "Nessun profilo trovato"
+
+msgid "Last used: "
+msgstr "Ultimo utilizzo: "
+
+msgid "OpenVPN3 Profiles"
+msgstr "Profili OpenVPN3"
+
+msgid "Manage your imported VPN configurations."
+msgstr "Gestisci le tue configurazioni VPN importate."
+
+msgid "Import New Profile"
+msgstr "Importa nuovo profilo"
+
+msgid "No profiles imported yet."
+msgstr "Nessun profilo ancora importato."
+
+msgid "Profile Name"
+msgstr "Nome del profilo"
+
+msgid "Enter a name for the imported profile (optional):"
+msgstr "Inserisci un nome per il profilo importato (opzionale):"
+
+msgid "Select OpenVPN Config"
+msgstr "Seleziona configurazione OpenVPN"
+
+msgid "Import"
+msgstr "Importa"
+
+msgid "Cancel"
+msgstr "Annulla"
+
+msgid "Rename Profile"
+msgstr "Rinomina profilo"
+
+msgid "Enter a new name for '%s':"
+msgstr "Inserisci un nuovo nome per '%s':"
+
+msgid "OpenVPN Configs"
+msgstr "Configurazioni OpenVPN"
+

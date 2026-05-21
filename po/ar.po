@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: openvpn3-indicator\n"
+"Language: ar\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Manage"
+msgstr "إدارة"
+
+msgid "Refresh"
+msgstr "تحديث"
+
+msgid "No profiles found"
+msgstr "لم يتم العثور على ملفات تعريف"
+
+msgid "Last used: "
+msgstr "آخر استخدام: "
+
+msgid "OpenVPN3 Profiles"
+msgstr "ملفات تعريف OpenVPN3"
+
+msgid "Manage your imported VPN configurations."
+msgstr "إدارة تكوينات VPN المستوردة."
+
+msgid "Import New Profile"
+msgstr "استيراد ملف تعريف جديد"
+
+msgid "No profiles imported yet."
+msgstr "لم يتم استيراد أي ملفات تعريف بعد."
+
+msgid "Profile Name"
+msgstr "اسم ملف التعريف"
+
+msgid "Enter a name for the imported profile (optional):"
+msgstr "أدخل اسمًا لملف التعريف المستورد (اختياري):"
+
+msgid "Select OpenVPN Config"
+msgstr "حدد تكوين OpenVPN"
+
+msgid "Import"
+msgstr "استيراد"
+
+msgid "Cancel"
+msgstr "إلغاء"
+
+msgid "Rename Profile"
+msgstr "إعادة تسمية ملف التعريف"
+
+msgid "Enter a new name for '%s':"
+msgstr "أدخل اسمًا جديدًا لـ '%s':"
+
+msgid "OpenVPN Configs"
+msgstr "تكوينات OpenVPN"
+

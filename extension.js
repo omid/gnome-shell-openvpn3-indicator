@@ -6,7 +6,7 @@ import Clutter from 'gi://Clutter';
 import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
-import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js';
+import { Extension, gettext as _ } from 'resource:///org/gnome/shell/extensions/extension.js';
 
 async function runCommand(argv) {
     try {
@@ -80,7 +80,7 @@ class OpenVPN3Indicator extends PanelMenu.Button {
         let manageBtnBox = new St.BoxLayout({ vertical: false, x_align: Clutter.ActorAlign.CENTER, y_align: Clutter.ActorAlign.CENTER, style_class: 'openvpn3-action-button-box' });
         let manageIcon = new St.Icon({ icon_name: 'preferences-system-symbolic', style_class: 'popup-menu-icon' });
         manageBtnBox.add_child(manageIcon);
-        manageBtnBox.add_child(new St.Label({ text: 'Manage', y_align: Clutter.ActorAlign.CENTER }));
+        manageBtnBox.add_child(new St.Label({ text: _('Manage'), y_align: Clutter.ActorAlign.CENTER }));
 
         let manageBtn = new St.Button({
             style_class: 'button openvpn3-action-button',
@@ -97,7 +97,7 @@ class OpenVPN3Indicator extends PanelMenu.Button {
         let refreshBtnBox = new St.BoxLayout({ vertical: false, x_align: Clutter.ActorAlign.CENTER, y_align: Clutter.ActorAlign.CENTER, style_class: 'openvpn3-action-button-box' });
         let refreshIcon = new St.Icon({ icon_name: 'view-refresh-symbolic', style_class: 'popup-menu-icon' });
         refreshBtnBox.add_child(refreshIcon);
-        refreshBtnBox.add_child(new St.Label({ text: 'Refresh', y_align: Clutter.ActorAlign.CENTER }));
+        refreshBtnBox.add_child(new St.Label({ text: _('Refresh'), y_align: Clutter.ActorAlign.CENTER }));
 
         let refreshBtn = new St.Button({
             style_class: 'button openvpn3-action-button',
@@ -192,7 +192,7 @@ class OpenVPN3Indicator extends PanelMenu.Button {
             });
 
             if (configsList.length === 0) {
-                let item = new PopupMenu.PopupMenuItem('No profiles found');
+                let item = new PopupMenu.PopupMenuItem(_('No profiles found'));
                 item.setSensitive(false);
                 this._listSection.addMenuItem(item);
                 return;
@@ -219,7 +219,7 @@ class OpenVPN3Indicator extends PanelMenu.Button {
 
                 if (config.lastUsed && config.lastUsed !== '-') {
                     let subLabel = new St.Label({
-                        text: 'Last used: ' + config.lastUsed,
+                        text: _('Last used: ') + config.lastUsed,
                         style_class: 'openvpn3-subtitle'
                     });
                     labelBox.add_child(subLabel);

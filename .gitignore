@@ -1,0 +1,15 @@
+# Compiled schemas
+gschemas.compiled
+
+# Packaged extension archives
+*.zip
+
+# Compiled translations (if you choose to untrack them in the future)
+*.mo
+
+# Editor and OS specifics
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store

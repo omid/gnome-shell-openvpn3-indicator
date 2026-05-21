@@ -68,8 +68,9 @@ bump-version:
 pack: install
 	@echo "Packaging extension..."
 	@cd $(SRC_DIR) && gnome-extensions pack --force --extra-source=locale
-	@mv $(SRC_DIR)/$(UUID).shell-extension.zip .
-	@echo "Created $(UUID).shell-extension.zip"
+	VERSION=$$(python3 -c "import json; print(json.load(open('openvpn3-indicator@omidmr.gmail.com/metadata.json')).get('version', 0))"); \
+	mv $(SRC_DIR)/$(UUID).shell-extension.zip ./$(UUID)-v$$VERSION.zip; \
+	echo "Created $(UUID)-v$$VERSION.zip"
 
 release: bump-version pack
 	@echo "Release ready!"

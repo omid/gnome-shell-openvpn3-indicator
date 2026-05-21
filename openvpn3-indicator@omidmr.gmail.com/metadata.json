@@ -3,8 +3,14 @@
   "description": "Control OpenVPN3 sessions and configs",
   "uuid": "openvpn3-indicator@omidmr.gmail.com",
   "shell-version": [
-    "45", "46", "47", "48", "49", "50"
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
   ],
   "gettext-domain": "openvpn3-indicator",
-  "settings-schema": "org.gnome.shell.extensions.openvpn3-indicator"
+  "settings-schema": "org.gnome.shell.extensions.openvpn3-indicator",
+  "version": 2
 }

@@ -1,50 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: openvpn3-indicator\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-21 22:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:83
 msgid "Manage"
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:100
 msgid "Refresh"
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:195
 msgid "No profiles found"
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:222
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:103
 msgid "Last used: "
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:42
 msgid "OpenVPN3 Profiles"
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:43
 msgid "Manage your imported VPN configurations."
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:48
 msgid "Import New Profile"
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:129
 msgid "No profiles imported yet."
 msgstr ""
 
-msgid "Profile Name"
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:141
+msgid "OpenVPN Configs"
 msgstr ""
 
-msgid "Enter a name for the imported profile (optional):"
-msgstr ""
-
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:146
 msgid "Select OpenVPN Config"
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:148
 msgid "Import"
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:149
 msgid "Cancel"
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:173
+msgid "Profile Name"
+msgstr ""
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:174
+msgid "Enter a name for the imported profile (optional):"
+msgstr ""
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:209
 msgid "Rename Profile"
 msgstr ""
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:211
+#, javascript-format
 msgid "Enter a new name for '%s':"
 msgstr ""
-

@@ -1,54 +1,73 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openvpn3-indicator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-21 22:42+0200\n"
 "Language: fa\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:83
 msgid "Manage"
 msgstr "مدیریت"
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:100
 msgid "Refresh"
 msgstr "تازه‌سازی"
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:195
 msgid "No profiles found"
 msgstr "هیچ نمایه‌ای یافت نشد"
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:222
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:103
 msgid "Last used: "
 msgstr "آخرین استفاده: "
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:42
 msgid "OpenVPN3 Profiles"
 msgstr "نمایه‌های OpenVPN3"
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:43
 msgid "Manage your imported VPN configurations."
 msgstr "پیکربندی‌های VPN وارد شده خود را مدیریت کنید."
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:48
 msgid "Import New Profile"
 msgstr "وارد کردن نمایه‌ جدید"
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:129
 msgid "No profiles imported yet."
 msgstr "هنوز هیچ نمایه‌ای وارد نشده است."
 
-msgid "Profile Name"
-msgstr "نام نمایه"
-
-msgid "Enter a name for the imported profile (optional):"
-msgstr "نامی برای نمایه‌ وارد شده وارد کنید (اختیاری):"
-
-msgid "Select OpenVPN Config"
-msgstr "انتخاب پیکربندی OpenVPN"
-
-msgid "Import"
-msgstr "وارد کردن"
-
-msgid "Cancel"
-msgstr "لغو"
-
-msgid "Rename Profile"
-msgstr "تغییر نام نمایه"
-
-msgid "Enter a new name for '%s':"
-msgstr "نام جدیدی برای '%s' وارد کنید:"
-
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:141
 msgid "OpenVPN Configs"
 msgstr "پیکربندی‌های OpenVPN"
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:146
+msgid "Select OpenVPN Config"
+msgstr "انتخاب پیکربندی OpenVPN"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:148
+msgid "Import"
+msgstr "وارد کردن"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:149
+msgid "Cancel"
+msgstr "لغو"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:173
+msgid "Profile Name"
+msgstr "نام نمایه"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:174
+msgid "Enter a name for the imported profile (optional):"
+msgstr "نامی برای نمایه‌ وارد شده وارد کنید (اختیاری):"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:209
+msgid "Rename Profile"
+msgstr "تغییر نام نمایه"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:211
+#, javascript-format
+msgid "Enter a new name for '%s':"
+msgstr "نام جدیدی برای '%s' وارد کنید:"

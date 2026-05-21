@@ -63,6 +63,13 @@ export default class OpenVPN3Preferences extends ExtensionPreferences {
 
         // Load profiles
         this._refreshProfiles();
+
+        window.connect('close-request', () => {
+            this._window = null;
+            this._group = null;
+            this._profilesGroup = null;
+            this._profileRows = null;
+        });
     }
 
     async _refreshProfiles() {

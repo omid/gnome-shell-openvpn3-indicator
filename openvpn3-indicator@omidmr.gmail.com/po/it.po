@@ -1,54 +1,73 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openvpn3-indicator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-21 22:42+0200\n"
 "Language: it\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:83
 msgid "Manage"
 msgstr "Gestisci"
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:100
 msgid "Refresh"
 msgstr "Aggiorna"
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:195
 msgid "No profiles found"
 msgstr "Nessun profilo trovato"
 
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:222
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:103
 msgid "Last used: "
 msgstr "Ultimo utilizzo: "
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:42
 msgid "OpenVPN3 Profiles"
 msgstr "Profili OpenVPN3"
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:43
 msgid "Manage your imported VPN configurations."
 msgstr "Gestisci le tue configurazioni VPN importate."
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:48
 msgid "Import New Profile"
 msgstr "Importa nuovo profilo"
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:129
 msgid "No profiles imported yet."
 msgstr "Nessun profilo ancora importato."
 
-msgid "Profile Name"
-msgstr "Nome del profilo"
-
-msgid "Enter a name for the imported profile (optional):"
-msgstr "Inserisci un nome per il profilo importato (opzionale):"
-
-msgid "Select OpenVPN Config"
-msgstr "Seleziona configurazione OpenVPN"
-
-msgid "Import"
-msgstr "Importa"
-
-msgid "Cancel"
-msgstr "Annulla"
-
-msgid "Rename Profile"
-msgstr "Rinomina profilo"
-
-msgid "Enter a new name for '%s':"
-msgstr "Inserisci un nuovo nome per '%s':"
-
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:141
 msgid "OpenVPN Configs"
 msgstr "Configurazioni OpenVPN"
 
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:146
+msgid "Select OpenVPN Config"
+msgstr "Seleziona configurazione OpenVPN"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:148
+msgid "Import"
+msgstr "Importa"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:149
+msgid "Cancel"
+msgstr "Annulla"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:173
+msgid "Profile Name"
+msgstr "Nome del profilo"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:174
+msgid "Enter a name for the imported profile (optional):"
+msgstr "Inserisci un nome per il profilo importato (opzionale):"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:209
+msgid "Rename Profile"
+msgstr "Rinomina profilo"
+
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:211
+#, javascript-format
+msgid "Enter a new name for '%s':"
+msgstr "Inserisci un nuovo nome per '%s':"

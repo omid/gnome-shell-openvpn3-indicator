@@ -2,72 +2,72 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openvpn3-indicator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-21 22:42+0200\n"
+"POT-Creation-Date: 2026-05-28 21:31+0200\n"
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
-#: openvpn3-indicator@omidmr.gmail.com/extension.js:83
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:56
 msgid "Manage"
 msgstr "Управление"
 
-#: openvpn3-indicator@omidmr.gmail.com/extension.js:100
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:73
 msgid "Refresh"
 msgstr "Обновить"
 
-#: openvpn3-indicator@omidmr.gmail.com/extension.js:195
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:168
 msgid "No profiles found"
 msgstr "Профили не найдены"
 
-#: openvpn3-indicator@omidmr.gmail.com/extension.js:222
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:103
+#: openvpn3-indicator@omidmr.gmail.com/extension.js:195
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:76
 msgid "Last used: "
 msgstr "Последнее использование: "
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:42
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:15
 msgid "OpenVPN3 Profiles"
 msgstr "Профили OpenVPN3"
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:43
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:16
 msgid "Manage your imported VPN configurations."
 msgstr "Управление импортированными конфигурациями VPN."
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:48
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:21
 msgid "Import New Profile"
 msgstr "Импорт нового профиля"
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:129
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:102
 msgid "No profiles imported yet."
 msgstr "Профили еще не импортированы."
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:141
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:114
 msgid "OpenVPN Configs"
 msgstr "Конфигурации OpenVPN"
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:146
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:119
 msgid "Select OpenVPN Config"
 msgstr "Выберите конфигурацию OpenVPN"
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:148
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:121
 msgid "Import"
 msgstr "Импорт"
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:149
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:122
 msgid "Cancel"
 msgstr "Отмена"
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:173
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:146
 msgid "Profile Name"
 msgstr "Имя профиля"
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:174
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:147
 msgid "Enter a name for the imported profile (optional):"
 msgstr "Введите имя для импортированного профиля (необязательно):"
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:209
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:182
 msgid "Rename Profile"
 msgstr "Переименовать профиль"
 
-#: openvpn3-indicator@omidmr.gmail.com/prefs.js:211
+#: openvpn3-indicator@omidmr.gmail.com/prefs.js:184
 #, javascript-format
 msgid "Enter a new name for '%s':"
 msgstr "Введите новое имя для '%s':"
